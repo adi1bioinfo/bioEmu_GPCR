@@ -80,6 +80,7 @@ bioEmu_GPCR/
     ├── tutorial.ipynb
     └── visualization.ipynb
 ```
+---
 
 ## Installation & Quickstart ⚙️
 
@@ -109,22 +110,23 @@ or selective analyses:
 ```
 python bioemu_analysis.py --protein_dir GPCR --rmsd --contact --cryptic
 ```
+---
 
 ## Biological Applications
 
-+ Rapid Generation of GPCR Structural Ensembles: Sample diverse conformers capturing active, inactive, and intermediate states.
++ **Rapid Generation of GPCR Structural Ensembles**: Sample diverse conformers capturing active, inactive, and intermediate states.
 
-+ Quantitative Dynamics Profiling (RMSD & RMSF): Pinpoint flexible loops and rigid cores critical for activation.
++ **Quantitative Dynamics Profiling (RMSD & RMSF)**: Pinpoint flexible loops and rigid cores critical for activation.
 
-+ Gating Residue and Allosteric Network Analysis: Characterize residue contacts and motions underpinning signal transduction.
++ **Gating Residue and Allosteric Network Analysis**: Characterize residue contacts and motions underpinning signal transduction.
 
-+ Cryptic Pocket Detection for Drug Discovery: Reveal transient binding sites missed by static structures.
++ **Cryptic Pocket Detection for Drug Discovery**: Reveal transient binding sites missed by static structures.
 
-+ Ligand Binding Site Prediction and Characterization: Cross-validate predicted pockets with known ligand interaction sites.
++ **Ligand Binding Site Prediction and Characterization**: Cross-validate predicted pockets with known ligand interaction sites.
 
-+ Conformational Impact of Mutations: Assess how mutations alter dynamic behavior and potential drug responses.
++ **Conformational Impact of Mutations**: Assess how mutations alter dynamic behavior and potential drug responses.
 
-+ Ensemble-Enhanced Virtual Screening Support: Provide receptor ensembles to improve docking realism.
++ **Ensemble-Enhanced Virtual Screening Support**: Provide receptor ensembles to improve docking realism.
 
 
 ---
@@ -161,10 +163,12 @@ Contributions are welcome! Please:
 
 Areas for contribution:
 
-Additional membrane transport proteins
+* Additional membrane transport proteins
 * Performance optimizations
 * Enhanced visualization tools
 * Additional analysis metrics
 * Documentation improvements
+
+---
 
 ## References
