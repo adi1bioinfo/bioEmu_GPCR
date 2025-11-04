@@ -1,4 +1,4 @@
-# bioEmu_GPCR: AI-Powered Protein Dynamics & Functional Insights Leveraging BioEmu with GPCR Focus 🚀
+# bioEmu_GPCR: AI-Powered Protein Dynamics & Functional Insights Leveraging BioEmu with GPCR Focus
 
 ---
 
