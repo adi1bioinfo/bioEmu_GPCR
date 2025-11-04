@@ -54,7 +54,7 @@ GPRC Represents targets for over 30% of current drugs, detailed understanding of
 ```
 bioEmu_GPCR/
 ├── README.md                    # Project overview and instructions
-├── requirements.txt             # Python dependencies
+├── bioemu_env.txt             # Python dependencies
 ├── analysis/                    # All analysis source code and scripts
 │   ├── __init__.py
 │   ├── core.py                  # Main analysis class with RMSD, RMSF, binding site, etc.
