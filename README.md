@@ -132,7 +132,7 @@ If you use this project in your research, please cite:
 }
 
 @software{bioEmu_GPCR,
-  title={Aquaporin-1 Conformational Analysis with BioEmu},
+  title={GPCR Conformational Analysis with BioEmu},
   author={Aditi Laddha},
   year={2025},
   url={https://github.com/adi1bioinfo/bioEmu_GPCR}
