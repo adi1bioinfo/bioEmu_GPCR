@@ -1,0 +1,6 @@
+bioemu
+bioemu[md]
+mdanalysis
+mdanalysistests
+py3Dmol
+logmd
