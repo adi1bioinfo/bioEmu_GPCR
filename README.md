@@ -25,18 +25,26 @@ BioEmu is a state-of-the-art generative deep learning model trained extensively 
 
 ---
 
-## Deep Dive into GPCR Dynamics — Why They Matter 🎯
+## GPCRs: Molecular Switches Shaping Physiology and Medicine
 
-**G protein-coupled receptors** (GPCRs) constitute a large family of membrane proteins that sense signals outside the cell and activate inside signal transduction pathways and, ultimately, cellular responses. GPCRs are pivotal molecular gatekeepers in human physiology — regulating senses, neurotransmission, immune responses, and countless cellular pathways.
+**G protein-coupled receptors** (GPCRs) constitute a large family of membrane proteins that sense signals outside the cell and activate inside signal transduction pathways and, ultimately, cellular responses.
 
-Why focus on GPCRs?
+1. **Cellular Signal Transduction**
+GPCRs convert extracellular signals (hormones, neurotransmitters, sensory stimuli) into intracellular responses by activating heterotrimeric G-proteins, triggering pathways that regulate critical cellular activities including gene expression, metabolism, and motility.
 
-- 🌟 **Conformational plasticity:** GPCRs transit through multiple dynamic states governing activation, ligand specificity, and signaling.  
-- 🔄 **Pharmacological importance:** Over 30% of approved drugs target GPCRs, yet many mechanisms remain elusive due to structural dynamics.  
-- 🔍 **Cryptic sites and allosteric modulation:** AI-driven ensemble sampling reveals transient pockets invisible in static crystal structures, opening novel drug discovery avenues.  
-- 🧩 **Intrinsic challenges:** Traditional experimental or MD methods struggle to capture rare but functionally critical states.
+2. **Sensory Perception**
+They mediate vision (e.g., rhodopsin in photoreceptors), taste, smell, and pheromone detection, allowing organisms to react to their environment dynamically.
 
-**bioEmu_GPCR** empowers researchers to rapidly generate large, functionally rich conformer sets of GPCRs and perform comprehensive analyses — including RMSD, RMSF, contact networks, functional residue's dynamics, binding site predictions, cryptic pocket detection and pore hydration, — driving mechanistic insights and aiding drug-design pipelines.
+3. **Neurological and Psychiatric Disorders**
+GPCRs regulate neurotransmitters like serotonin, dopamine, and glutamate, influencing mood, cognition, pain perception, and are implicated in diseases such as depression, schizophrenia, and neurodegeneration.
+
+4. **Immune System Modulation**
+These receptors control immune cell migration, differentiation, and inflammatory responses. Aberrant GPCR signaling is linked to autoimmune diseases and immunodeficiencies.
+
+5. **Cancer Biology**
+GPCRs contribute to tumor growth, metastasis, and the tumor microenvironment, making them critical targets in oncology drug discovery.
+
+GPRC Represents targets for over 30% of current drugs, detailed understanding of GPCR conformational landscapes enables rational drug development, including allosteric modulators and biased agonists that offer enhanced therapeutic profiles.
 
 ---
 
@@ -50,8 +58,28 @@ Why focus on GPCRs?
 ---
 
 ## Project Structure
-
-<pre> ## Project Structure bioEmu_GPCR/ ├── README.md # Project overview and instructions ├── requirements.txt # Python dependencies ├── bioemu_sampling.py # Script for BioEmu-based conformer sampling ├── bioemu_analysis.py # Main analysis class & CLI for analysis tasks ├── GPCR/ # Example protein folder (sequence, outputs) │ ├── input.fasta # Input sequence for BioEmu │ ├── residues.yaml # Key residue/gating annotations │ ├── pdb/ # Generated PDB structures │ ├── xtc/ # Generated trajectory files │ ├── figures/ # Output plots, images │ └── reports/ # Analysis text/CSV reports ├── examples/ │ ├── basic_analysis.py # Minimal working analysis example │ └── custom_workflow.py # Custom use-cases and extensions ├── notebooks/ │ ├── gpcr_workflow.ipynb # Jupyter notebook tutorial │ └── visualization.ipynb # Interactive exploratory analysis ├── output/ # (git-ignored) Generated results from runs │ ├── analysis_results.png # Visualization figures │ └── analysis_report.txt # Text summary ├── tests/ │ └── test_analysis.py # Unit & integration tests └── LICENSE # Open source license file </pre>
+```
+bioEmu_GPCR/
+├── README.md                    # Project overview and instructions
+├── requirements.txt             # Python dependencies
+├── analysis/                    # All analysis source code and scripts
+│   ├── __init__.py
+│   ├── core.py                  # Main analysis class with RMSD, RMSF, binding site, etc.
+│   └── utils.py                 # Helper functions for plotting, data loading, etc.
+├── GPCR/                        
+│   ├── gpcr.fasta               # FASTA file input for BioEmu sampling
+│   ├── pdb/                     # Generated PDB conformations
+│   ├── xtc/                     # Generated trajectories
+│   ├── figures/                 # Plots and visualization images
+│   └── reports/                 # Textual and CSV analysis outputs
+├── scripts/                     
+│   ├── run_sampling.py          # Script to sample conformers with BioEmu using GPCR/input.fasta
+│   ├── run_analysis.py          # Script to perform chosen analyses on data in GPCR/
+│   └── run_all.py               # Combined pipeline script
+└── notebooks/                   
+    ├── tutorial.ipynb
+    └── visualization.ipynb
+```
 
 ## Installation & Quickstart ⚙️
 
@@ -81,6 +109,24 @@ or selective analyses:
 ```
 python bioemu_analysis.py --protein_dir GPCR --rmsd --contact --cryptic
 ```
+
+## Biological Applications
+
++ Rapid Generation of GPCR Structural Ensembles: Sample diverse conformers capturing active, inactive, and intermediate states.
+
++ Quantitative Dynamics Profiling (RMSD & RMSF): Pinpoint flexible loops and rigid cores critical for activation.
+
++ Gating Residue and Allosteric Network Analysis: Characterize residue contacts and motions underpinning signal transduction.
+
++ Cryptic Pocket Detection for Drug Discovery: Reveal transient binding sites missed by static structures.
+
++ Ligand Binding Site Prediction and Characterization: Cross-validate predicted pockets with known ligand interaction sites.
+
++ Conformational Impact of Mutations: Assess how mutations alter dynamic behavior and potential drug responses.
+
++ Ensemble-Enhanced Virtual Screening Support: Provide receptor ensembles to improve docking realism.
+
+
 ---
 
 ## Citation 📚
