@@ -80,9 +80,9 @@ bioEmu_GPCR/
 ```
 git clone https://github.com/adi1bioinfo/bioEmu_GPCR.git
 cd bioEmu_GPCR
-conda create -n bioemu_env python=3.11
+conda create -n bioemu_env python=3.10
 conda activate bioemu_env
-pip install -r requirements.txt
+pip install -r bioemu_env.txt
 ```
 For optional molecular dynamics relaxation capabilities:
 ```
