@@ -131,7 +131,7 @@ If you use this project in your research, please cite:
   year={2024}
 }
 
-@software{aquaporin_bioemu_2025,
+@software{bioEmu_GPCR,
   title={Aquaporin-1 Conformational Analysis with BioEmu},
   author={Aditi Laddha},
   year={2025},
