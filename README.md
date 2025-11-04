@@ -1,7 +1,5 @@
 # bioEmu_GPCR: AI-Powered Protein Dynamics & Functional Insights Leveraging BioEmu with GPCR Focus 🚀
 
----
-
 ## Overview
 
 Welcome to **bioEmu_GPCR** — a cutting-edge computational toolkit designed to harness the transformative power of **BioEmu** (Microsoft’s biomolecular emulator) to explore the dynamic conformational landscapes of proteins, with a special focus on **G-Protein-Coupled Receptors (GPCRs)**.
@@ -29,19 +27,19 @@ BioEmu is a state-of-the-art generative deep learning model trained extensively 
 
 **G protein-coupled receptors** (GPCRs) constitute a large family of membrane proteins that sense signals outside the cell and activate inside signal transduction pathways and, ultimately, cellular responses.
 
-1. **Cellular Signal Transduction**
+1. **Cellular Signal Transduction**<br>
 GPCRs convert extracellular signals (hormones, neurotransmitters, sensory stimuli) into intracellular responses by activating heterotrimeric G-proteins, triggering pathways that regulate critical cellular activities including gene expression, metabolism, and motility.
 
-2. **Sensory Perception**
+2. **Sensory Perception**<br>
 They mediate vision (e.g., rhodopsin in photoreceptors), taste, smell, and pheromone detection, allowing organisms to react to their environment dynamically.
 
-3. **Neurological and Psychiatric Disorders**
+3. **Neurological and Psychiatric Disorders**<br>
 GPCRs regulate neurotransmitters like serotonin, dopamine, and glutamate, influencing mood, cognition, pain perception, and are implicated in diseases such as depression, schizophrenia, and neurodegeneration.
 
-4. **Immune System Modulation**
+4. **Immune System Modulation**<br>
 These receptors control immune cell migration, differentiation, and inflammatory responses. Aberrant GPCR signaling is linked to autoimmune diseases and immunodeficiencies.
 
-5. **Cancer Biology**
+5. **Cancer Biology**<br>
 GPCRs contribute to tumor growth, metastasis, and the tumor microenvironment, making them critical targets in oncology drug discovery.
 
 GPRC Represents targets for over 30% of current drugs, detailed understanding of GPCR conformational landscapes enables rational drug development, including allosteric modulators and biased agonists that offer enhanced therapeutic profiles.
