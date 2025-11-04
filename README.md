@@ -6,8 +6,6 @@ Welcome to **bioEmu_GPCR** — a cutting-edge computational toolkit designed to 
 
 As a dedicated PhD researcher in computational biology, I developed this repository to show how BioEmu’s innovative deep learning approach can accelerate *biologically meaningful* structural ensemble generation and multifaceted analyses — democratizing access to protein dynamics studies which traditionally demanded massive computational resources and months of simulation time.
 
----
-
 ## Why BioEmu? Revolutionizing Protein Simulations 🔥
 
 BioEmu is a state-of-the-art generative deep learning model trained extensively on protein structural ensembles, enabling it to rapidly sample thousands of **physically-plausible** conformations of any protein monomer from purely sequence input, bypassing the cumbersome need for long, resource-intensive molecular dynamics (MD) simulations.
@@ -20,8 +18,6 @@ BioEmu is a state-of-the-art generative deep learning model trained extensively 
 | **Application Scope** | Detailed atomic dynamics  | High-resolution snapshots | Large-scale ensemble generation |
 
 > **BioEmu bridges the divide between accuracy and scalability — unlocking dynamic views on protein function at a fraction of traditional costs and time.**
-
----
 
 ## GPCRs: Molecular Switches Shaping Physiology and Medicine
 
@@ -44,8 +40,6 @@ GPCRs contribute to tumor growth, metastasis, and the tumor microenvironment, ma
 
 GPRC Represents targets for over 30% of current drugs, detailed understanding of GPCR conformational landscapes enables rational drug development, including allosteric modulators and biased agonists that offer enhanced therapeutic profiles.
 
----
-
 ## Features & Capabilities ✨
 
 - ⚡ **Rapid structure generation:** Easily obtain thousands of equilibrated conformations from FASTA sequences using BioEmu.  
@@ -53,7 +47,6 @@ GPRC Represents targets for over 30% of current drugs, detailed understanding of
 - 💧 **Functional site exploration:** Examine gating residues, hydration profiles, ligand binding sites, and cryptic pockets with built-in analyses.  
 - 🎨 **Publication-quality visualization:** Integrated plotting modules make data interpretation straightforward and elegant.  
 - 🛠️ **User-friendly CLI & modular APIs:** Run full or selective analyses seamlessly with minimal commands, ideal for integration into diverse workflows.  
----
 
 ## Project Structure
 ```
@@ -78,7 +71,6 @@ bioEmu_GPCR/
     ├── tutorial.ipynb
     └── visualization.ipynb
 ```
----
 
 ## Installation & Quickstart ⚙️
 
@@ -94,6 +86,7 @@ For optional molecular dynamics relaxation capabilities:
 ```
 pip install bioemu[md]
 ```
+
 ### Sampling & Analysis
 
 Run conformer generation:
@@ -108,7 +101,6 @@ or selective analyses:
 ```
 python bioemu_analysis.py --protein_dir GPCR --rmsd --contact --cryptic
 ```
----
 
 ## Biological Applications
 
@@ -125,9 +117,6 @@ python bioemu_analysis.py --protein_dir GPCR --rmsd --contact --cryptic
 + **Conformational Impact of Mutations**: Assess how mutations alter dynamic behavior and potential drug responses.
 
 + **Ensemble-Enhanced Virtual Screening Support**: Provide receptor ensembles to improve docking realism.
-
-
----
 
 ## Citation 📚
 
@@ -147,7 +136,6 @@ If you use this project in your research, please cite:
   url={https://github.com/adi1bioinfo/bioEmu_GPCR}
 }
 ```
----
 
 ## Contribution & Contact 🤝
 
@@ -167,6 +155,5 @@ Areas for contribution:
 * Additional analysis metrics
 * Documentation improvements
 
----
 
 ## References
