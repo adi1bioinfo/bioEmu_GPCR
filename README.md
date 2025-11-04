@@ -27,7 +27,7 @@ BioEmu is a state-of-the-art generative deep learning model trained extensively 
 
 ## Deep Dive into GPCR Dynamics — Why They Matter 🎯
 
-GPCRs are pivotal molecular gatekeepers in human physiology — regulating senses, neurotransmission, immune responses, and countless cellular pathways.
+**G protein-coupled receptors** (GPCRs) constitute a large family of membrane proteins that sense signals outside the cell and activate inside signal transduction pathways and, ultimately, cellular responses. GPCRs are pivotal molecular gatekeepers in human physiology — regulating senses, neurotransmission, immune responses, and countless cellular pathways.
 
 Why focus on GPCRs?
 
@@ -49,11 +49,76 @@ Why focus on GPCRs?
 - 🛠️ **User-friendly CLI & modular APIs:** Run full or selective analyses seamlessly with minimal commands, ideal for integration into diverse workflows.  
 ---
 
+## Project Structure
+
+<pre> ## Project Structure bioEmu_GPCR/ ├── README.md # Project overview and instructions ├── requirements.txt # Python dependencies ├── bioemu_sampling.py # Script for BioEmu-based conformer sampling ├── bioemu_analysis.py # Main analysis class & CLI for analysis tasks ├── GPCR/ # Example protein folder (sequence, outputs) │ ├── input.fasta # Input sequence for BioEmu │ ├── residues.yaml # Key residue/gating annotations │ ├── pdb/ # Generated PDB structures │ ├── xtc/ # Generated trajectory files │ ├── figures/ # Output plots, images │ └── reports/ # Analysis text/CSV reports ├── examples/ │ ├── basic_analysis.py # Minimal working analysis example │ └── custom_workflow.py # Custom use-cases and extensions ├── notebooks/ │ ├── gpcr_workflow.ipynb # Jupyter notebook tutorial │ └── visualization.ipynb # Interactive exploratory analysis ├── output/ # (git-ignored) Generated results from runs │ ├── analysis_results.png # Visualization figures │ └── analysis_report.txt # Text summary ├── tests/ │ └── test_analysis.py # Unit & integration tests └── LICENSE # Open source license file </pre>
+
 ## Installation & Quickstart ⚙️
 
-### Prerequisites
-
-
 ### Setup
+```
+git clone https://github.com/adi1bioinfo/bioEmu_GPCR.git
+cd bioEmu_GPCR
+conda create -n bioemu_env python=3.11
+conda activate bioemu_env
+pip install -r requirements.txt
+```
+For optional molecular dynamics relaxation capabilities:
+```
+pip install bioemu[md]
+```
+### Sampling & Analysis
 
+Run conformer generation:
+```
+python bioemu_sampling.py --protein_dir GPCR --num_samples 100
+```
+Run full analysis pipeline or specific modules:
+```
+python bioemu_analysis.py --protein_dir GPCR --run_all
+```
+or selective analyses:
+```
+python bioemu_analysis.py --protein_dir GPCR --rmsd --contact --cryptic
+```
+---
 
+## Citation 📚
+
+If you use this project in your research, please cite:
+```
+@article{lin2024scalable,
+  title={Scalable emulation of protein equilibrium ensembles},
+  author={Lin, Ze and Frey, Nathaniel C. and others},
+  journal={Nature Methods},
+  year={2024}
+}
+
+@software{aquaporin_bioemu_2025,
+  title={Aquaporin-1 Conformational Analysis with BioEmu},
+  author={Aditi Laddha},
+  year={2025},
+  url={https://github.com/adi1bioinfo/bioEmu_GPCR}
+}
+```
+---
+
+## Contribution & Contact 🤝
+
+Contributions are welcome! Please:
+
+1. Fork the repository
+2. Create a feature branch (git checkout -b feature/new-feature)
+3. Commit changes (git commit -am 'Add new feature')
+4. Push to branch (git push origin feature/new-feature)
+5. Open a Pull Request
+
+Areas for contribution:
+
+Additional membrane transport proteins
+* Performance optimizations
+* Enhanced visualization tools
+* Additional analysis metrics
+* Documentation improvements
+
+## References
